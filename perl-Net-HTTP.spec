@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-HTTP
 Version  : 6.07
-Release  : 14
+Release  : 15
 URL      : http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Net-HTTP-6.07.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Net-HTTP-6.07.tar.gz
 Summary  : 'Low-level HTTP connection (client)'
@@ -67,10 +67,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/Net/HTTP.pm
-/usr/lib/perl5/site_perl/5.26.0/Net/HTTP/Methods.pm
-/usr/lib/perl5/site_perl/5.26.0/Net/HTTP/NB.pm
-/usr/lib/perl5/site_perl/5.26.0/Net/HTTPS.pm
+/usr/lib/perl5/site_perl/5.26.1/Net/HTTP.pm
+/usr/lib/perl5/site_perl/5.26.1/Net/HTTP/Methods.pm
+/usr/lib/perl5/site_perl/5.26.1/Net/HTTP/NB.pm
+/usr/lib/perl5/site_perl/5.26.1/Net/HTTPS.pm
 
 %files doc
 %defattr(-,root,root,-)
