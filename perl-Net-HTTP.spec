@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-HTTP
 Version  : 6.07
-Release  : 15
+Release  : 16
 URL      : http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Net-HTTP-6.07.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Net-HTTP-6.07.tar.gz
 Summary  : 'Low-level HTTP connection (client)'
