@@ -1,5 +1,5 @@
 PKG_NAME := perl-Net-HTTP
-URL := http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Net-HTTP-6.07.tar.gz
-
+URL = https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.18.tar.gz
+ARCHIVES = 
 
 include ../common/Makefile.common
