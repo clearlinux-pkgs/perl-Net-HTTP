@@ -77,10 +77,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/Net/HTTP.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/HTTP/Methods.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/HTTP/NB.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/HTTPS.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/HTTP.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/HTTP/Methods.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/HTTP/NB.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/HTTPS.pm
 
 %files dev
 %defattr(-,root,root,-)
