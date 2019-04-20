@@ -4,10 +4,10 @@
 #
 Name     : perl-Net-HTTP
 Version  : 6.18
-Release  : 25
+Release  : 26
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.18.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.18.tar.gz
-Summary  : 'Low-level HTTP connection (client)'
+Summary  : Low-level HTTP connection (client)
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Net-HTTP-license = %{version}-%{release}
@@ -25,6 +25,7 @@ version 6.18
 Summary: dev components for the perl-Net-HTTP package.
 Group: Development
 Provides: perl-Net-HTTP-devel = %{version}-%{release}
+Requires: perl-Net-HTTP = %{version}-%{release}
 
 %description dev
 dev components for the perl-Net-HTTP package.
