@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-HTTP
 Version  : 6.20
-Release  : 31
+Release  : 32
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.20.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.20.tar.gz
 Summary  : 'Low-level HTTP connection (client)'
@@ -103,7 +103,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/Net/HTTP.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Net/HTTP/Methods.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Net/HTTP/NB.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Net/HTTPS.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Net/HTTP.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Net/HTTP/Methods.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Net/HTTP/NB.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Net/HTTPS.pm
