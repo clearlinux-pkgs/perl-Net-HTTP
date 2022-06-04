@@ -4,12 +4,13 @@
 #
 Name     : perl-Net-HTTP
 Version  : 6.22
-Release  : 40
+Release  : 41
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.22.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.22.tar.gz
 Summary  : 'Low-level HTTP connection (client)'
 Group    : Development/Tools
-License  : Artistic-1.0-Perl
+License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
+Requires: perl-Net-HTTP-license = %{version}-%{release}
 Requires: perl-Net-HTTP-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(URI)
@@ -29,6 +30,14 @@ Requires: perl-Net-HTTP = %{version}-%{release}
 
 %description dev
 dev components for the perl-Net-HTTP package.
+
+
+%package license
+Summary: license components for the perl-Net-HTTP package.
+Group: Default
+
+%description license
+license components for the perl-Net-HTTP package.
 
 
 %package perl
@@ -66,6 +75,8 @@ make TEST_VERBOSE=1 test
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-Net-HTTP
+cp %{_builddir}/Net-HTTP-6.22/LICENSE %{buildroot}/usr/share/package-licenses/perl-Net-HTTP/55ea774e4ea0a1871dd8be781ec3dbfcce59ac8f
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -86,9 +97,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/Net::HTTP::NB.3
 /usr/share/man/man3/Net::HTTPS.3
 
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-Net-HTTP/55ea774e4ea0a1871dd8be781ec3dbfcce59ac8f
+
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Net/HTTP.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Net/HTTP/Methods.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Net/HTTP/NB.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Net/HTTPS.pm
+/usr/lib/perl5/*
