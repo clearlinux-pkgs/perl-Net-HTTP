@@ -5,7 +5,7 @@
 #
 Name     : perl-Net-HTTP
 Version  : 6.23
-Release  : 44
+Release  : 45
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.23.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.23.tar.gz
 Summary  : 'Low-level HTTP connection (client)'
